@@ -1,0 +1,26 @@
+<view class="container">
+  <view class="main">
+    <view  class="text_box" wx:for="{{orderInfos}}" wx:key="key">
+      {{item.orderId}}
+      {{item.openId}}
+      {{item.startPlace}}
+      {{item.endPlace}}
+      {{item.distance}}
+      {{item.costAmt}}
+      {{item.costTime}}
+      {{item.createTime}}
+      {{item.mobilePhone}}
+      {{item.orderStatus}}
+    </view>
+    <view class="text-title">当前时间：</view>
+    <view class="show-time">{{nowtime}}</view>
+    <view></view>
+    <view class="text-title">等待时间：</view>
+    <view class="show-time">{{time}}</view>
+    <view></view>
+
+    <view class="text-title2">{{info}}</view>
+  </view>
+
+
+</view>

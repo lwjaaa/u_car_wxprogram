@@ -1,0 +1,9 @@
+<view class="container">
+  <text class="alter">{{alterMsg}}</text>
+  <text class="title">朋友信息</text>
+  <view class="section">
+    <input placeholder="手机号" bindinput="payphone" ></input>
+    <input placeholder="乘车人姓名（选填）" bindinput="payname"></input>
+  </view>
+  <text class="detail_button" bindtouchstart="addInfo">确认代叫</text>
+</view>

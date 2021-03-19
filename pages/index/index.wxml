@@ -1,0 +1,49 @@
+<!-- 标题 -->
+<view class="flex_title">
+  <!-- -->
+<view class="title_text" > Hi {{nickname}}，欢迎使用U卡出行 </view>
+<icon><image  class="flex_title title_image" src="{{thumb}}" ></image></icon>
+
+</view>
+<!-- 开始位置 -->
+<view class="start">
+<view class="map_text">
+  <view class="map-1">
+    <image src="/images/jt.png"></image>
+    <view>起点</view>
+  </view>
+  <!-- <view>1111</view> -->
+  <text class="h1">{{startPosiData.startname}}</text>
+  <text>{{startPosiData.startdesc}}</text>
+</view>
+</view>
+<!-- 目的位置 -->
+<view class="end">
+<view class="map_text">
+  <view class="map-2">
+    <image src="/images/end.png"></image>
+    <view>终点</view>
+  </view>
+  <!-- 查询地点 -->
+  <view class="section">
+  <input class="h1" bindtouchstart="bindInput" placeholder="查找地点" value="{{textData.name}}"></input>
+  <input class="dec" value="{{textData.desc}}"></input>
+  </view>
+</view>
+</view>
+<!-- 下单按钮 -->
+<button bindtap="getRoute" >立即下单</button>
+
+<!-- <view class="section">
+  <input bindtouchstart="bindInput" placeholder="查找地点" value="{{keywords}}" />
+</view> -->
+<!-- <view class="map_container">
+  <map class="map" id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="16" show-location="true" markers="{{markers}}"
+    bindmarkertap="makertap" controls="{{controls}}" bindcontroltap="clickcontrol" bindregionchange="mapchange"></map>
+</view> -->
+
+ <!-- <view bindtouchstart="makertapthis" data-markerid="{{item.id}}" class="text_box" wx:for="{{markers}}" wx:key="key" >
+   <image src="{{item.iconPath}}" style="width:20rpx;height:20rpx"></image>
+  <text class="h1">{{item.id+1}}、{{item.name}}</text>
+  <text>详细地址：{{item.address}}</text>
+</view> -->

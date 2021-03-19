@@ -1,0 +1,37 @@
+<!-- <view class="flex-style">
+  <view class="flex-item {{cindex=='0' ? 'active' : ''}}" data-id="0" bindtouchstart="changeType">驾车</view>
+  <view class="flex-item {{cindex=='1' ? 'active' : ''}}" data-id="1" bindtouchstart="changeType">步行</view>
+  <view class="flex-item {{cindex=='2' ? 'active' : ''}}" data-id="2" bindtouchstart="changeType">公交</view>
+  <view class="flex-item {{cindex=='3' ? 'active' : ''}}" data-id="3" bindtouchstart="changeType">骑行</view>
+</view> -->
+<!-- <view class="map_box" wx:if="{{cindex!=2}}">
+  <map id="navi_map" longitude="{{longitude}}" latitude="{{latitude}}" scale="16" markers="{{markers}}" polyline="{{polyline}}"
+    show-location="true"></map>
+</view> -->
+
+<view class="text_box" wx:if="{{cindex!=2}}">
+  <view class="place">
+    <view>出发：{{startname}}</view>
+    <view>到达：{{name}}</view>
+  </view>
+  
+  <text >{{distance}}</text>
+  <text >{{cost}}</text>
+  <text >{{time}}</text>
+  <view class="friend_block" wx:if="{{friend.payphone}}">
+    <view wx:if="{{friend.payname}}" class="fr_item">{{friend.payname}} ></view>
+    <view class="fr_item">{{friend.payphone}} ></view>
+    <view class="fr_clear" bindtap="clearFriend">取消</view>
+  </view>
+  <text class="help_button"  bindtap="toAddinfo">帮朋友叫</text>
+  <text class="detail_button" bindtouchstart="goDetail">路线详情</text>
+  <text class="detail_button" bindtouchstart="callCarer">呼叫代驾</text>
+  <button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">获取手机号</button>
+  <!-- <view class="detail_button2" bindtouchstart="nav">导航</view> -->
+</view>
+
+<!-- <view class="bus_box" wx:for="{{transits}}" wx:for-item="i" wx:key="key1" wx:if="{{cindex==2}}">
+  <text class="bus_item" wx:for="{{i.transport}}" wx:for-item="j" wx:key="key2">
+    {{j}}
+  </text>
+</view> -->

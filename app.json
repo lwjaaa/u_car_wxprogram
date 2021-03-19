@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/routes/routes",
+    "pages/info/info",
+    "pages/weather/weather",
+    "pages/helpFriends/helpFriends",
+    "pages/inputtip/inputtip",
+    "pages/callcar/callcar",
+    "pages/user/user"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#4D8AD7",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#4D8AD7",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/images/map2.png",
+        "selectedIconPath": "/images/map1.png"
+      },
+      {
+        "pagePath": "pages/weather/weather",
+        "text": "天气",
+        "iconPath": "/images/weather2.png",
+        "selectedIconPath": "/images/weather1.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "iconPath": "/images/42.png",
+        "selectedIconPath": "/images/41.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 15000
+  },
+  "permission": {
+    "scope.userLocation": {
+    "desc": "你的位置信息将用于小程序位置接口的效果展示" 
+    }
+    },
+  "sitemapLocation": "sitemap.json"
+  
+}

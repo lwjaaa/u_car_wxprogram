@@ -1,0 +1,15 @@
+<view class="main">
+    <view class="header">
+        <image src="{{thumb}}" class="thumb" ></image>
+        <!-- <button open-type='getUserInfo' bindgetuserinfo="getUserInfo">登录</button> -->
+        <text class="nickname" > {{nickname}} </text>
+        <button wx:if="{{nickname === ''}}" class="login" open-type='getUserInfo' bindgetuserinfo="getUserInfo">{{login}}</button>
+        <text class="about">关于我们</text>
+    </view>
+    <view class="address-box">
+        
+    </view>
+    <view class="orders-box">
+       
+    </view>
+</view>
